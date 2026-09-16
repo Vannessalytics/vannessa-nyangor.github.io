@@ -336,17 +336,18 @@ img,video,iframe {
 
 .rail-control {
   position:absolute;
-  z-index:15;
+  z-index:50;
   top:20px;
   bottom:90px;
-  width:52px;
+  width:60px;
   border:0;
   color:#fff;
-  font-size:2rem;
-  background:linear-gradient(90deg,rgba(0,0,0,.82),rgba(0,0,0,.12));
-  opacity:0;
+  font-size:2.2rem;
+  background:linear-gradient(90deg,rgba(0,0,0,.90),rgba(0,0,0,.08));
+  opacity:.92;
   transition:.2s;
-  cursor:pointer
+  cursor:pointer;
+  pointer-events:auto
 }
 
 .rail-wrap:hover .rail-control {
