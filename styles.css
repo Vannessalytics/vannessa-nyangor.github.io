@@ -323,11 +323,11 @@ img,video,iframe {
   display:grid;
   grid-auto-flow:column;
   grid-auto-columns:minmax(620px,46%);
-  gap:10px;
+  gap:22px;
   overflow-x:auto;
   scrollbar-width:none;
-  padding:16px 0 72px;
-  scroll-snap-type:x proximity
+  padding:20px 0 90px;
+  scroll-snap-type:x mandatory
 }
 
 .rail::-webkit-scrollbar {
@@ -337,8 +337,8 @@ img,video,iframe {
 .rail-control {
   position:absolute;
   z-index:15;
-  top:16px;
-  bottom:72px;
+  top:20px;
+  bottom:90px;
   width:52px;
   border:0;
   color:#fff;
@@ -496,7 +496,7 @@ img,video,iframe {
 }
 
 .tile:hover {
-  transform:scale(1.12);
+  transform:scale(1.035);
   z-index:20
 }
 
@@ -1011,7 +1011,7 @@ img,video,iframe {
   }
 
   .rail {
-    grid-auto-columns:minmax(260px,40%)
+    grid-auto-columns:minmax(480px,68%)
   }
 
 }
@@ -1077,7 +1077,7 @@ img,video,iframe {
   }
 
   .rail {
-    grid-auto-columns:minmax(250px,78%);
+    grid-auto-columns:92%;
     padding-bottom:28px
   }
 
