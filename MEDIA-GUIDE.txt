@@ -1,0 +1,71 @@
+VANNESSA PORTFOLIO — EASY MEDIA GUIDE
+=====================================
+
+GOAL
+----
+Routine image and video changes should not require editing HTML or CSS.
+All website files remain at the repository root. There are NO nested folders.
+
+1) PROFILE PHOTO — REPLACE ONE PNG
+----------------------------------
+Filename:
+    vannessa-profile.png
+
+Recommended replacement dimensions:
+    1200 x 1200 px (square PNG)
+
+How it displays:
+    128 x 128 px circular frame on the About / Resume page.
+    The site uses object-fit: cover and centers the image automatically.
+
+To update it:
+    Upload a new PNG with the exact same filename and replace the existing file.
+    No HTML or CSS changes are required.
+
+2) PROJECT COVER IMAGES — REPLACE PNGS ONLY
+--------------------------------------------
+Recommended dimensions for EVERY project image:
+    1600 x 900 px (16:9 PNG)
+
+Keep the main subject near the centre because the website uses cover cropping.
+The package includes the SAME temporary placeholder image under all five filenames.
+That means the site is complete now, but each image can be replaced independently later.
+
+Exact filenames:
+    project-real-estate.png
+    project-apps-script-locator.png
+    project-service-scheduling.png
+    project-tank-status.png
+    project-invoice-automation.png
+
+To update a project image:
+    Create/export a 1600 x 900 PNG.
+    Give it the exact matching filename above.
+    Upload it to the repository root and replace the old file.
+    The home cards, Projects page cards, and that case-study hero update automatically.
+
+3) PROJECT VIDEOS — EDIT ONE FILE ONLY
+---------------------------------------
+Open:
+    site-config.js
+
+Each project has one line like:
+    videoUrl: "https://www.youtube.com/watch?v=jNQXAC9IVRw"
+
+Replace only the URL between the quotation marks.
+Normal YouTube watch links, youtu.be links, Shorts links, live links, and embed links are accepted.
+The site converts the URL into the embedded player automatically.
+
+A real temporary YouTube video is included on every project page so the layout can be tested now.
+
+4) SOCIAL LINKS — EDIT ONE FILE ONLY
+-------------------------------------
+Also in site-config.js:
+    linkedinUrl: "PASTE YOUR LINKEDIN URL HERE"
+    githubUrl: "https://github.com/Vannessalytics"
+
+5) DO NOT REORGANIZE THE FILES
+------------------------------
+All files belong in the GitHub repository ROOT beside index.html.
+Do not create assets/, projects/, images/, css/, or js/ folders.
+The package is intentionally flat to make GitHub browser editing easier.

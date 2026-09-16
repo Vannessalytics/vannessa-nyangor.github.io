@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   Real Estate Multi-Platform Publisher | Vannessa Nyang&rsquo;or
+  </title>
+  <meta content="Chrome extension workflow for extracting listing data and reducing repetitive cross-platform posting." name="description"/>
+  <meta content="Real Estate Multi-Platform Publisher | Vannessa Nyang&rsquo;or" property="og:title"/>
+  <meta content="Chrome extension workflow for extracting listing data and reducing repetitive cross-platform posting." property="og:description"/>
+  <meta content="website" property="og:type"/>
+  <meta content="#070707" name="theme-color"/>
+  <link href="styles.css" rel="stylesheet"/>
+ </head>
+ <body>
+  <div class="site">
+   <nav class="nav">
+    <div class="shell nav-inner">
+     <a class="logo" href="index.html">
+      VN
+      <span>
+       .
+      </span>
+     </a>
+     <button aria-label="Open navigation" class="menu">
+      ☰
+     </button>
+     <div class="nav-links">
+      <a href="index.html">
+       Home
+      </a>
+      <a href="about.html">
+       About / R&eacute;sum&eacute;
+      </a>
+      <a class="active" href="projects.html">
+       Projects
+      </a>
+     </div>
+     <div class="spacer">
+     </div>
+     <a aria-label="Email" class="contact-dot" data-link="email" href="mailto:vannessa.nyangor@gmail.com">
+      ✉
+     </a>
+    </div>
+   </nav>
+   <header class="case-hero" data-project-key="realEstatePublisher" style="--case-accent:#e50914; --case-dark:#241014;">
+    <div class="shell">
+     <span class="case-badge">
+      Iterative build
+     </span>
+     <h1>
+      Real Estate Multi-Platform Publisher
+     </h1>
+     <p>
+      Chrome extension workflow for extracting listing data and reducing repetitive cross-platform posting.
+     </p>
+     <div class="case-meta">
+      <span>
+       Product / Workflow Designer
+      </span>
+      <span>
+       Chrome Extension &middot; JavaScript &middot; Browser Workflow Design
+      </span>
+     </div>
+     <div class="actions" style="margin-top:28px">
+      <a class="btn primary" href="#case-study">
+       ▶ View Case Study
+      </a>
+      <a class="btn secondary" href="projects.html">
+       Back to Projects
+      </a>
+     </div>
+    </div>
+   </header>
+   <main class="shell case-content" id="case-study">
+    <article class="case-body">
+     <section class="reveal">
+      <h2>
+       The problem
+      </h2>
+      <p>
+       Publishing the same property listing across multiple platforms can require repeated copying, reformatting, and validation. The project was designed to turn a source listing into a structured record that could be reviewed once and reused across a publishing workflow.
+      </p>
+     </section>
+     <section class="reveal">
+      <h2>
+       How it works
+      </h2>
+      <div class="workflow-steps">
+       <div class="workflow-step">
+        <span class="step-number">
+         Step 01
+        </span>
+        <h3>
+         Extract the source listing
+        </h3>
+        <p>
+         From the active Realtor.ca page, the extension reads structured property, agent, brokerage, and photo information into a reusable listing record.
+        </p>
+       </div>
+       <div class="workflow-step">
+        <span class="step-number">
+         Step 02
+        </span>
+        <h3>
+         Validate and normalize
+        </h3>
+        <p>
+         The extracted fields are organized and checked so missing or malformed values can be handled before they are reused.
+        </p>
+       </div>
+       <div class="workflow-step">
+        <span class="step-number">
+         Step 03
+        </span>
+        <h3>
+         Open selected destinations
+        </h3>
+        <p>
+         The workflow can open selected posting destinations such as Zillow, Apartments.com, Facebook, Royal LePage, RE/MAX, and Zolo.
+        </p>
+       </div>
+       <div class="workflow-step">
+        <span class="step-number">
+         Step 04
+        </span>
+        <h3>
+         Fill and recover
+        </h3>
+        <p>
+         After a destination loads, content scripts receive the listing data and attempt to fill the relevant form fields; page changes, slow loads, and extension-context failures are treated as recoverable exceptions.
+        </p>
+       </div>
+      </div>
+     </section>
+     <div class="media reveal" data-project-video="realEstatePublisher">
+      <div class="media-placeholder">
+       <div class="play">
+        ▶
+       </div>
+       <b>
+        Project demo video
+       </b>
+       <span>
+        The video URL is controlled from site-config.js. Paste a normal YouTube link there and this player updates automatically.
+       </span>
+      </div>
+     </div>
+     <p class="media-note">
+      Temporary test video: replace the project&rsquo;s videoUrl in
+      <strong>
+       site-config.js
+      </strong>
+      when your own walkthrough is ready.
+     </p>
+     <section class="reveal">
+      <h2>
+       Design approach
+      </h2>
+      <ul>
+       <li>
+        Built around one source listing so the user does not repeatedly re-enter the same information.
+       </li>
+       <li>
+        Separated extraction, validation, destination launching, and form filling into distinct stages.
+       </li>
+       <li>
+        Preserved a reviewable workflow rather than treating browser automation as completely hands-off.
+       </li>
+       <li>
+        Iterated on extension-context invalidation and slow-loading pages to improve reliability without removing the existing interface.
+       </li>
+      </ul>
+     </section>
+     <section class="reveal">
+      <h2>
+       Outcome
+      </h2>
+      <p>
+       An iterative Chrome-extension workflow that demonstrates how repetitive listing preparation can be structured into a reusable record and passed into multiple downstream posting flows while keeping exceptions visible to the user.
+      </p>
+     </section>
+     <section class="reveal">
+      <h2>
+       What this demonstrates
+      </h2>
+      <p>
+       Product thinking, workflow design, browser automation concepts, structured data handling, exception management, and iterative debugging.
+      </p>
+     </section>
+    </article>
+    <aside class="case-aside reveal">
+     <dl>
+      <dt>
+       Project
+      </dt>
+      <dd>
+       01 &middot; Real Estate Multi-Platform Publisher
+      </dd>
+      <dt>
+       Role
+      </dt>
+      <dd>
+       Product / Workflow Designer
+      </dd>
+      <dt>
+       Status
+      </dt>
+      <dd>
+       Iterative build
+      </dd>
+      <dt>
+       Tools / Context
+      </dt>
+      <dd>
+       Chrome Extension &middot; JavaScript &middot; Browser Workflow Design
+      </dd>
+      <dt>
+       Cover image
+      </dt>
+      <dd>
+       Replace project-real-estate.png in the repository root. Recommended: 1600 &times; 900 PNG.
+      </dd>
+      <dt>
+       Demo video
+      </dt>
+      <dd>
+       Replace one YouTube URL in site-config.js.
+      </dd>
+     </dl>
+    </aside>
+   </main>
+   <footer class="footer">
+    <div class="shell">
+     <div class="footer-grid">
+      <div>
+       <h2>
+        Let&rsquo;s build better systems.
+       </h2>
+       <p>
+        I&rsquo;m interested in operations, workflow improvement, automation, client experience, and the practical systems that make complex work easier to run.
+       </p>
+      </div>
+      <div class="footer-links">
+       <a data-link="email" href="mailto:vannessa.nyangor@gmail.com">
+        Email &nearrow;
+       </a>
+       <a aria-disabled="true" data-link="linkedin" href="#">
+        LinkedIn &nearrow;
+       </a>
+       <a data-link="github" href="https://github.com/Vannessalytics">
+        GitHub &nearrow;
+       </a>
+      </div>
+     </div>
+     <div class="footer-bottom">
+      <span>
+       Burlington, Ontario, Canada
+      </span>
+      <span>
+       &copy;
+       <span data-year="">
+       </span>
+       Vannessa Nyang&rsquo;or
+      </span>
+     </div>
+    </div>
+   </footer>
+  </div>
+  <script src="site-config.js">
+  </script>
+  <script src="site.js">
+  </script>
+ </body>
+</html>

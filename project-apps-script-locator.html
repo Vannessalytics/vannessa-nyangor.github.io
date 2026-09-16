@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   Google Apps Script Locator | Vannessa Nyang&rsquo;or
+  </title>
+  <meta content="A lightweight search-and-locate interface for operational information stored in Google Workspace." name="description"/>
+  <meta content="Google Apps Script Locator | Vannessa Nyang&rsquo;or" property="og:title"/>
+  <meta content="A lightweight search-and-locate interface for operational information stored in Google Workspace." property="og:description"/>
+  <meta content="website" property="og:type"/>
+  <meta content="#070707" name="theme-color"/>
+  <link href="styles.css" rel="stylesheet"/>
+ </head>
+ <body>
+  <div class="site">
+   <nav class="nav">
+    <div class="shell nav-inner">
+     <a class="logo" href="index.html">
+      VN
+      <span>
+       .
+      </span>
+     </a>
+     <button aria-label="Open navigation" class="menu">
+      ☰
+     </button>
+     <div class="nav-links">
+      <a href="index.html">
+       Home
+      </a>
+      <a href="about.html">
+       About / R&eacute;sum&eacute;
+      </a>
+      <a class="active" href="projects.html">
+       Projects
+      </a>
+     </div>
+     <div class="spacer">
+     </div>
+     <a aria-label="Email" class="contact-dot" data-link="email" href="mailto:vannessa.nyangor@gmail.com">
+      ✉
+     </a>
+    </div>
+   </nav>
+   <header class="case-hero" data-project-key="appsScriptLocator" style="--case-accent:#2f81f7; --case-dark:#101a2b;">
+    <div class="shell">
+     <span class="case-badge">
+      Working project
+     </span>
+     <h1>
+      Google Apps Script Locator
+     </h1>
+     <p>
+      A lightweight search-and-locate interface for operational information stored in Google Workspace.
+     </p>
+     <div class="case-meta">
+      <span>
+       Workflow / Tool Designer
+      </span>
+      <span>
+       Google Apps Script &middot; Google Sheets &middot; Web App
+      </span>
+     </div>
+     <div class="actions" style="margin-top:28px">
+      <a class="btn primary" href="#case-study">
+       ▶ View Case Study
+      </a>
+      <a class="btn secondary" href="projects.html">
+       Back to Projects
+      </a>
+     </div>
+    </div>
+   </header>
+   <main class="shell case-content" id="case-study">
+    <article class="case-body">
+     <section class="reveal">
+      <h2>
+       The problem
+      </h2>
+      <p>
+       Operational scheduling becomes harder when customer and system-location records are incomplete or inconsistently formatted. This Apps Script tool enriches missing location data so scheduling, proximity checks, and routing can use cleaner address information.
+      </p>
+     </section>
+     <section class="reveal">
+      <h2>
+       How it works
+      </h2>
+      <div class="workflow-steps">
+       <div class="workflow-step">
+        <span class="step-number">
+         Step 01
+        </span>
+        <h3>
+         Read the operational record
+        </h3>
+        <p>
+         The script starts from a Google Sheet row and checks the available System Location or Customer information for the job or service record.
+        </p>
+       </div>
+       <div class="workflow-step">
+        <span class="step-number">
+         Step 02
+        </span>
+        <h3>
+         Resolve the location
+        </h3>
+        <p>
+         Google Places / text search and geocoding logic are used to identify the best matching location when address fields are missing or incomplete.
+        </p>
+       </div>
+       <div class="workflow-step">
+        <span class="step-number">
+         Step 03
+        </span>
+        <h3>
+         Write standardized fields
+        </h3>
+        <p>
+         The sheet is updated with formatted address, city, province, postal code, coordinates, Place ID, and a map link; unresolved records are clearly marked for review.
+        </p>
+       </div>
+       <div class="workflow-step">
+        <span class="step-number">
+         Step 04
+        </span>
+        <h3>
+         Support scheduling decisions
+        </h3>
+        <p>
+         The enriched location data can then support Ontario-only filtering, proximity grouping, route planning, and more reliable calendar preparation.
+        </p>
+       </div>
+      </div>
+     </section>
+     <div class="media reveal" data-project-video="appsScriptLocator">
+      <div class="media-placeholder">
+       <div class="play">
+        ▶
+       </div>
+       <b>
+        Project demo video
+       </b>
+       <span>
+        The video URL is controlled from site-config.js. Paste a normal YouTube link there and this player updates automatically.
+       </span>
+      </div>
+     </div>
+     <p class="media-note">
+      Temporary test video: replace the project&rsquo;s videoUrl in
+      <strong>
+       site-config.js
+      </strong>
+      when your own walkthrough is ready.
+     </p>
+     <section class="reveal">
+      <h2>
+       Design approach
+      </h2>
+      <ul>
+       <li>
+        Kept Google Sheets as the working operational source rather than introducing a separate database.
+       </li>
+       <li>
+        Used Google Apps Script to connect existing records with location and geocoding services.
+       </li>
+       <li>
+        Made unresolved lookups visible instead of silently inserting uncertain location data.
+       </li>
+       <li>
+        Structured the output so addresses and coordinates can be reused by later scheduling and mapping workflows.
+       </li>
+      </ul>
+     </section>
+     <section class="reveal">
+      <h2>
+       Outcome
+      </h2>
+      <p>
+       A lightweight location-enrichment workflow that turns incomplete operational records into more consistent scheduling inputs while preserving a clear manual-review path when a location cannot be resolved.
+      </p>
+     </section>
+     <section class="reveal">
+      <h2>
+       What this demonstrates
+      </h2>
+      <p>
+       Google Apps Script, Google Sheets automation, geocoding and Places integration, data normalization, operational exception handling, and location-aware workflow design.
+      </p>
+     </section>
+    </article>
+    <aside class="case-aside reveal">
+     <dl>
+      <dt>
+       Project
+      </dt>
+      <dd>
+       02 &middot; Google Apps Script Locator
+      </dd>
+      <dt>
+       Role
+      </dt>
+      <dd>
+       Workflow / Tool Designer
+      </dd>
+      <dt>
+       Status
+      </dt>
+      <dd>
+       Working project
+      </dd>
+      <dt>
+       Tools / Context
+      </dt>
+      <dd>
+       Google Apps Script &middot; Google Sheets &middot; Web App
+      </dd>
+      <dt>
+       Cover image
+      </dt>
+      <dd>
+       Replace project-apps-script-locator.png in the repository root. Recommended: 1600 &times; 900 PNG.
+      </dd>
+      <dt>
+       Demo video
+      </dt>
+      <dd>
+       Replace one YouTube URL in site-config.js.
+      </dd>
+     </dl>
+    </aside>
+   </main>
+   <footer class="footer">
+    <div class="shell">
+     <div class="footer-grid">
+      <div>
+       <h2>
+        Let&rsquo;s build better systems.
+       </h2>
+       <p>
+        I&rsquo;m interested in operations, workflow improvement, automation, client experience, and the practical systems that make complex work easier to run.
+       </p>
+      </div>
+      <div class="footer-links">
+       <a data-link="email" href="mailto:vannessa.nyangor@gmail.com">
+        Email &nearrow;
+       </a>
+       <a aria-disabled="true" data-link="linkedin" href="#">
+        LinkedIn &nearrow;
+       </a>
+       <a data-link="github" href="https://github.com/Vannessalytics">
+        GitHub &nearrow;
+       </a>
+      </div>
+     </div>
+     <div class="footer-bottom">
+      <span>
+       Burlington, Ontario, Canada
+      </span>
+      <span>
+       &copy;
+       <span data-year="">
+       </span>
+       Vannessa Nyang&rsquo;or
+      </span>
+     </div>
+    </div>
+   </footer>
+  </div>
+  <script src="site-config.js">
+  </script>
+  <script src="site.js">
+  </script>
+ </body>
+</html>

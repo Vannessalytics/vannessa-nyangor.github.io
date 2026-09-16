@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <title>
+   Invoice Automation | Vannessa Nyang&rsquo;or
+  </title>
+  <meta content="Google Apps Script invoice automation that monitors labeled Gmail messages, processes PDF attachments, extracts key invoice fields, records them in Google Sheets, and logs exceptions." name="description">
+  <meta content="Invoice Automation | Vannessa Nyang&rsquo;or" property="og:title">
+  <meta content="Google Apps Script invoice automation that monitors labeled Gmail messages, processes PDF attachments, extracts key invoice fields, records them in Google Sheets, and logs exceptions." property="og:description">
+  <meta content="website" property="og:type">
+  <meta content="#070707" name="theme-color">
+  <link href="styles.css" rel="stylesheet">
+ </head>
+ <body>
+  <div class="site">
+   <nav class="nav">
+    <div class="shell nav-inner">
+     <a class="logo" href="index.html">
+      VN
+      <span>
+       .
+      </span>
+     </a>
+     <button aria-label="Open navigation" class="menu">
+      ☰
+     </button>
+     <div class="nav-links">
+      <a href="index.html">
+       Home
+      </a>
+      <a href="about.html">
+       About / R&eacute;sum&eacute;
+      </a>
+      <a class="active" href="projects.html">
+       Projects
+      </a>
+     </div>
+     <div class="spacer">
+     </div>
+     <a aria-label="Email" class="contact-dot" data-link="email" href="mailto:vannessa.nyangor@gmail.com">
+      ✉
+     </a>
+    </div>
+   </nav>
+   <header class="case-hero" data-project-key="invoiceAutomation" style="--case-accent:#9f76ff; --case-dark:#1d1630;">
+    <div class="shell">
+     <span class="case-badge">
+      Automation
+     </span>
+     <h1>
+      Invoice Automation
+     </h1>
+     <p>
+      Google Apps Script invoice automation that monitors labeled Gmail messages, processes PDF attachments, extracts key invoice fields, records them in Google Sheets, and logs exceptions.
+     </p>
+     <div class="case-meta">
+      <span>
+       Automation / Workflow Designer
+      </span>
+      <span>
+       Google Apps Script &middot; Gmail &middot; Google Sheets &middot; Scheduled Triggers
+      </span>
+     </div>
+     <div class="actions" style="margin-top:28px">
+      <a class="btn primary" href="#case-study">
+       ▶ View Case Study
+      </a>
+      <a class="btn secondary" href="projects.html">
+       Back to Projects
+      </a>
+     </div>
+    </div>
+   </header>
+   <main class="shell case-content" id="case-study">
+    <article class="case-body">
+     <section class="reveal">
+      <h2>
+       The problem
+      </h2>
+      <p>
+       Invoice information arriving by email can require repetitive manual review and data entry before it becomes usable for tracking or reporting. The automation was designed to turn labeled invoice emails into structured records while preserving a clear error trail for items that need review.
+      </p>
+     </section>
+     <section class="reveal">
+      <h2>
+       How it works
+      </h2>
+      <div class="workflow-steps">
+       <div class="workflow-step">
+        <span class="step-number">
+         Step 01
+        </span>
+        <h3>
+         Watch the invoice inbox
+        </h3>
+        <p>
+         A scheduled Apps Script checks unread Gmail messages carrying the invoice label so the workflow starts from a controlled intake queue.
+        </p>
+       </div>
+       <div class="workflow-step">
+        <span class="step-number">
+         Step 02
+        </span>
+        <h3>
+         Process PDF attachments
+        </h3>
+        <p>
+         The script reviews attachments, skips non-PDF files, and sends each invoice PDF through the extraction routine.
+        </p>
+       </div>
+       <div class="workflow-step">
+        <span class="step-number">
+         Step 03
+        </span>
+        <h3>
+         Extract and structure key fields
+        </h3>
+        <p>
+         Parsing rules capture vendor, total amount, invoice number, invoice date, tax, category, received date, filename, and a confidence score when the fields can be identified.
+        </p>
+       </div>
+       <div class="workflow-step">
+        <span class="step-number">
+         Step 04
+        </span>
+        <h3>
+         Write, log, and monitor
+        </h3>
+        <p>
+         Successful records are appended to Google Sheets, processed messages are marked read, and errors are written to a dedicated log with notification and system-health checks for follow-up.
+        </p>
+       </div>
+      </div>
+     </section>
+     <div class="media reveal" data-project-video="invoiceAutomation">
+      <div class="media-placeholder">
+       <div class="play">
+        ▶
+       </div>
+       <b>
+        Project demo video
+       </b>
+       <span>
+        The video URL is controlled from site-config.js. Paste a normal YouTube link there and this player updates automatically.
+       </span>
+      </div>
+     </div>
+     <p class="media-note">
+      Temporary test video: replace the project&rsquo;s videoUrl in
+      <strong>
+       site-config.js
+      </strong>
+      when your own walkthrough is ready.
+     </p>
+     <section class="reveal">
+      <h2>
+       Design approach
+      </h2>
+      <ul>
+       <li>
+        Use a Gmail label and unread state to keep the automation focused on a defined invoice-processing queue.
+       </li>
+       <li>
+        Separate essential fields from optional fields and calculate a confidence score so incomplete extraction is easier to identify.
+       </li>
+       <li>
+        Centralize successful records and error history in Google Sheets instead of leaving processing results scattered across email.
+       </li>
+       <li>
+        Include scheduled triggers, health checks, logging, and error notifications so the workflow can be monitored rather than operating as a black box.
+       </li>
+      </ul>
+     </section>
+     <section class="reveal">
+      <h2>
+       Outcome
+      </h2>
+      <p>
+       A working Google Apps Script automation pattern that turns invoice emails into structured spreadsheet records and reduces repetitive invoice transcription while keeping exceptions visible for manual review.
+      </p>
+     </section>
+     <section class="reveal">
+      <h2>
+       What this demonstrates
+      </h2>
+      <p>
+       Google Apps Script, Gmail and Google Sheets automation, scheduled triggers, PDF-oriented data extraction, pattern matching, validation, confidence scoring, error handling, operational logging, and workflow design.
+      </p>
+     </section>
+    </article>
+    <aside class="case-aside reveal">
+     <dl>
+      <dt>
+       Project
+      </dt>
+      <dd>
+       05 &middot; Invoice Automation
+      </dd>
+      <dt>
+       Role
+      </dt>
+      <dd>
+       Automation / Workflow Designer
+      </dd>
+      <dt>
+       Status
+      </dt>
+      <dd>
+       Automation prototype
+      </dd>
+      <dt>
+       Tools / Context
+      </dt>
+      <dd>
+       Google Apps Script &middot; Gmail &middot; Google Sheets &middot; Scheduled Triggers
+      </dd>
+      <dt>
+       Cover image
+      </dt>
+      <dd>
+       Replace project-invoice-automation.png in the repository root. Recommended: 1600 &times; 900 PNG.
+      </dd>
+      <dt>
+       Demo video
+      </dt>
+      <dd>
+       Replace one YouTube URL in site-config.js.
+      </dd>
+     </dl>
+    </aside>
+   </main>
+   <footer class="footer">
+    <div class="shell">
+     <div class="footer-grid">
+      <div>
+       <h2>
+        Let&rsquo;s build better systems.
+       </h2>
+       <p>
+        I&rsquo;m interested in operations, workflow improvement, automation, client experience, and the practical systems that make complex work easier to run.
+       </p>
+      </div>
+      <div class="footer-links">
+       <a data-link="email" href="mailto:vannessa.nyangor@gmail.com">
+        Email &nearrow;
+       </a>
+       <a aria-disabled="true" data-link="linkedin" href="#">
+        LinkedIn &nearrow;
+       </a>
+       <a data-link="github" href="https://github.com/Vannessalytics">
+        GitHub &nearrow;
+       </a>
+      </div>
+     </div>
+     <div class="footer-bottom">
+      <span>
+       Burlington, Ontario, Canada
+      </span>
+      <span>
+       &copy;
+       <span data-year>
+       </span>
+       Vannessa Nyang&rsquo;or
+      </span>
+     </div>
+    </div>
+   </footer>
+  </div>
+  <script src="site-config.js">
+  </script>
+  <script src="site.js">
+  </script>
+ </body>
+</html>

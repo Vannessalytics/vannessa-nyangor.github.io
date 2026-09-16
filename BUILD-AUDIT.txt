@@ -1,0 +1,48 @@
+VANNESSA PORTFOLIO — INVOICE AUTOMATION BUILD AUDIT
+====================================================
+
+Build goal
+----------
+Preserve the existing easy-edit portfolio UI and media system while replacing only Project 05,
+"Zoho Service Request Workflow," with "Invoice Automation."
+
+Verification
+------------
+Total root-level files: 22
+Nested folders: 0
+HTML pages: 8
+Case-study pages: 5
+Project images: 5 x 1600 x 900 PNG
+Profile image: 1200 x 1200 PNG
+Central media/contact config: site-config.js
+HTML/CSS/JS: expanded and readable; not minified
+Internal local-reference checks: PASS
+Project-key/video-key checks: PASS
+Image-dimension checks: PASS
+JavaScript syntax checks: PASS
+Stale Project 05 references: NONE
+
+UI preservation
+---------------
+styles.css unchanged from the previous easy-edit build: YES
+site.js unchanged from the previous easy-edit build: YES
+About page unchanged: YES
+Other four case-study pages unchanged: YES
+Resume unchanged: YES
+
+Project 05 replacement
+----------------------
+Page: project-invoice-automation.html
+Cover image: project-invoice-automation.png
+Config key: invoiceAutomation
+Card title: Invoice Automation
+Tools shown: Google Apps Script, Gmail, Google Sheets, Scheduled Triggers
+Demo video: controlled by site-config.js exactly like the other projects
+
+Hashes
+------
+styles.css SHA256: d2dc607a5c08cdb5357c5ee496ce16533728a5292053d7087305d2b91f3e87c1
+site.js SHA256: a5024cab0fd53a3a116fff7df1c4fb8202cab0ac52057aa8eb84af6a69b718fa
+project-invoice-automation.png SHA256: 0f52ce448f6352b25607c85181ed2f28d0a3d6f2b9c76727466ecd54c8a20386
+
+Audit result: PASS

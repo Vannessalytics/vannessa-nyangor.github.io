@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   Tank Status Communication Web App | Vannessa Nyang&rsquo;or
+  </title>
+  <meta content="A shared operational interface for checking tank requirements, fulfilment status, ownership, and follow-up actions." name="description"/>
+  <meta content="Tank Status Communication Web App | Vannessa Nyang&rsquo;or" property="og:title"/>
+  <meta content="A shared operational interface for checking tank requirements, fulfilment status, ownership, and follow-up actions." property="og:description"/>
+  <meta content="website" property="og:type"/>
+  <meta content="#070707" name="theme-color"/>
+  <link href="styles.css" rel="stylesheet"/>
+ </head>
+ <body>
+  <div class="site">
+   <nav class="nav">
+    <div class="shell nav-inner">
+     <a class="logo" href="index.html">
+      VN
+      <span>
+       .
+      </span>
+     </a>
+     <button aria-label="Open navigation" class="menu">
+      ☰
+     </button>
+     <div class="nav-links">
+      <a href="index.html">
+       Home
+      </a>
+      <a href="about.html">
+       About / R&eacute;sum&eacute;
+      </a>
+      <a class="active" href="projects.html">
+       Projects
+      </a>
+     </div>
+     <div class="spacer">
+     </div>
+     <a aria-label="Email" class="contact-dot" data-link="email" href="mailto:vannessa.nyangor@gmail.com">
+      ✉
+     </a>
+    </div>
+   </nav>
+   <header class="case-hero" data-project-key="tankStatus" style="--case-accent:#35c58a; --case-dark:#10251d;">
+    <div class="shell">
+     <span class="case-badge">
+      Internal tool concept
+     </span>
+     <h1>
+      Tank Status Communication Web App
+     </h1>
+     <p>
+      A shared operational interface for checking tank requirements, fulfilment status, ownership, and follow-up actions.
+     </p>
+     <div class="case-meta">
+      <span>
+       Operations / Tool Designer
+      </span>
+      <span>
+       Google Apps Script &middot; Google Sheets &middot; Shared Web Interface
+      </span>
+     </div>
+     <div class="actions" style="margin-top:28px">
+      <a class="btn primary" href="#case-study">
+       ▶ View Case Study
+      </a>
+      <a class="btn secondary" href="projects.html">
+       Back to Projects
+      </a>
+     </div>
+    </div>
+   </header>
+   <main class="shell case-content" id="case-study">
+    <article class="case-body">
+     <section class="reveal">
+      <h2>
+       The problem
+      </h2>
+      <p>
+       Tank readiness can affect whether a scheduled service visit can proceed, but status information can be scattered across emails, spreadsheet notes, purchasing updates, and verbal follow-ups. The tool concept creates one simple place to see what is required and what remains unresolved.
+      </p>
+     </section>
+     <section class="reveal">
+      <h2>
+       How it works
+      </h2>
+      <div class="workflow-steps">
+       <div class="workflow-step">
+        <span class="step-number">
+         Step 01
+        </span>
+        <h3>
+         Open one shared web app
+        </h3>
+        <p>
+         The Apps Script deployment is designed around a simple shareable web-app URL, avoiding a heavier sign-in workflow for routine internal use.
+        </p>
+       </div>
+       <div class="workflow-step">
+        <span class="step-number">
+         Step 02
+        </span>
+        <h3>
+         Read the Sheet-backed records
+        </h3>
+        <p>
+         The interface loads Tank Jobs, inventory requirements, communication history, status fields, owners, dates, and notes from the connected Google Sheet.
+        </p>
+       </div>
+       <div class="workflow-step">
+        <span class="step-number">
+         Step 03
+        </span>
+        <h3>
+         Update status and communication
+        </h3>
+        <p>
+         Users can record current quantities, readiness, follow-up notes, next actions, and communication history so the operational view stays current.
+        </p>
+       </div>
+       <div class="workflow-step">
+        <span class="step-number">
+         Step 04
+        </span>
+        <h3>
+         Preserve accountability
+        </h3>
+        <p>
+         A change log keeps important updates traceable, while scheduling staff can use the current tank status before confirming or maintaining a service visit.
+        </p>
+       </div>
+      </div>
+     </section>
+     <div class="media reveal" data-project-video="tankStatus">
+      <div class="media-placeholder">
+       <div class="play">
+        ▶
+       </div>
+       <b>
+        Project demo video
+       </b>
+       <span>
+        The video URL is controlled from site-config.js. Paste a normal YouTube link there and this player updates automatically.
+       </span>
+      </div>
+     </div>
+     <p class="media-note">
+      Temporary test video: replace the project&rsquo;s videoUrl in
+      <strong>
+       site-config.js
+      </strong>
+      when your own walkthrough is ready.
+     </p>
+     <section class="reveal">
+      <h2>
+       Design approach
+      </h2>
+      <ul>
+       <li>
+        Kept the Google Sheet as the underlying operational record while adding a cleaner web interface.
+       </li>
+       <li>
+        Designed for a single shareable URL rather than introducing a separate account system.
+       </li>
+       <li>
+        Separated jobs, communications, inventory, settings, and change history so users can quickly find the information they need.
+       </li>
+       <li>
+        Avoided marking items fulfilled unless the available evidence supported that status.
+       </li>
+      </ul>
+     </section>
+     <section class="reveal">
+      <h2>
+       Outcome
+      </h2>
+      <p>
+       A lightweight internal web-app concept that makes tank readiness, inventory, communication, and next actions easier to see in one place and easier to use when coordinating service work.
+      </p>
+     </section>
+     <section class="reveal">
+      <h2>
+       What this demonstrates
+      </h2>
+      <p>
+       Google Apps Script web-app design, Google Sheets integration, operational status tracking, change logging, dependency management, and cross-functional communication.
+      </p>
+     </section>
+    </article>
+    <aside class="case-aside reveal">
+     <dl>
+      <dt>
+       Project
+      </dt>
+      <dd>
+       04 &middot; Tank Status Communication Web App
+      </dd>
+      <dt>
+       Role
+      </dt>
+      <dd>
+       Operations / Tool Designer
+      </dd>
+      <dt>
+       Status
+      </dt>
+      <dd>
+       Internal tool concept
+      </dd>
+      <dt>
+       Tools / Context
+      </dt>
+      <dd>
+       Google Apps Script &middot; Google Sheets &middot; Shared Web Interface
+      </dd>
+      <dt>
+       Cover image
+      </dt>
+      <dd>
+       Replace project-tank-status.png in the repository root. Recommended: 1600 &times; 900 PNG.
+      </dd>
+      <dt>
+       Demo video
+      </dt>
+      <dd>
+       Replace one YouTube URL in site-config.js.
+      </dd>
+     </dl>
+    </aside>
+   </main>
+   <footer class="footer">
+    <div class="shell">
+     <div class="footer-grid">
+      <div>
+       <h2>
+        Let&rsquo;s build better systems.
+       </h2>
+       <p>
+        I&rsquo;m interested in operations, workflow improvement, automation, client experience, and the practical systems that make complex work easier to run.
+       </p>
+      </div>
+      <div class="footer-links">
+       <a data-link="email" href="mailto:vannessa.nyangor@gmail.com">
+        Email &nearrow;
+       </a>
+       <a aria-disabled="true" data-link="linkedin" href="#">
+        LinkedIn &nearrow;
+       </a>
+       <a data-link="github" href="https://github.com/Vannessalytics">
+        GitHub &nearrow;
+       </a>
+      </div>
+     </div>
+     <div class="footer-bottom">
+      <span>
+       Burlington, Ontario, Canada
+      </span>
+      <span>
+       &copy;
+       <span data-year="">
+       </span>
+       Vannessa Nyang&rsquo;or
+      </span>
+     </div>
+    </div>
+   </footer>
+  </div>
+  <script src="site-config.js">
+  </script>
+  <script src="site.js">
+  </script>
+ </body>
+</html>
