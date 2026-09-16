@@ -336,18 +336,21 @@ img,video,iframe {
 
 .rail-control {
   position:absolute;
-  z-index:50;
+  z-index:9999;
   top:20px;
   bottom:90px;
-  width:60px;
+  width:88px;
   border:0;
   color:#fff;
-  font-size:2.2rem;
-  background:linear-gradient(90deg,rgba(0,0,0,.90),rgba(0,0,0,.08));
-  opacity:.92;
+  font-size:3.5rem;
+  font-weight:700;
+  background:linear-gradient(90deg,rgba(0,0,0,.96),rgba(0,0,0,.14));
+  opacity:1;
   transition:.2s;
   cursor:pointer;
-  pointer-events:auto
+  pointer-events:auto;
+  text-shadow:0 3px 12px rgba(0,0,0,.95);
+  transform:translateZ(0)
 }
 
 .rail-wrap:hover .rail-control {
