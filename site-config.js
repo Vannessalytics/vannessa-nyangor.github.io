@@ -37,7 +37,7 @@ window.PORTFOLIO_CONFIG = {
   projects: {
     realEstatePublisher: {
       coverImage: "project-real-estate.png",
-      videoUrl: "https://www.youtube.com/watch?v=jNQXAC9IVRw"
+      videoUrl: "https://youtu.be/CSoRQ6h8ljA"
     },
 
     appsScriptLocator: {
