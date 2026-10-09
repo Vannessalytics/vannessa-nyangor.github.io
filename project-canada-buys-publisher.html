@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>CanadaBuys Procurement Publisher | Vannessa Nyang’or</title>
+<meta content="Chrome extension workflow that extracts CanadaBuys tender details and creates structured procurement opportunity records in HubSpot." name="description"/>
+<meta content="CanadaBuys Procurement Publisher | Vannessa Nyang’or" property="og:title"/>
+<meta content="Extract CanadaBuys solicitation details into structured HubSpot procurement opportunity records." property="og:description"/>
+<meta content="website" property="og:type"/>
+<meta content="#070707" name="theme-color"/>
+<link href="styles.css" rel="stylesheet"/>
+</head>
+<body>
+<div class="site">
+<nav class="nav">
+<div class="shell nav-inner">
+<a class="logo" href="index.html">
+      VN
+      <span>
+       .
+      </span>
+</a>
+<button aria-label="Open navigation" class="menu">
+      ☰
+     </button>
+<div class="nav-links">
+<a href="index.html">
+       Home
+      </a>
+<a href="about.html">
+       About / Résumé
+      </a>
+<a class="active" href="projects.html">
+       Projects
+      </a>
+</div>
+<div class="spacer">
+</div>
+<a aria-label="Email" class="contact-dot" data-link="email" href="mailto:vannessa.nyangor@gmail.com">
+      ✉
+     </a>
+</div>
+</nav>
+<header class="case-hero" data-project-key="canadaBuysPublisher" style="--case-accent:#d8b26a; --case-dark:#1d251c;">
+<div class="shell">
+<span class="case-badge">Procurement Automation</span>
+<h1>CanadaBuys Procurement Publisher</h1>
+<p>A browser-based procurement workflow that captures CanadaBuys tender information and structures it into a HubSpot CRM opportunity record.</p>
+<div class="case-meta">
+<span>Workflow / Automation Designer</span>
+<span>Chrome Extension · CanadaBuys · HubSpot CRM · JavaScript</span>
+</div>
+<div class="actions" style="margin-top:28px">
+<a class="btn primary" href="#case-study">
+       ▶ View Case Study
+      </a>
+<a class="btn secondary" href="projects.html">
+       Back to Projects
+      </a>
+</div>
+</div>
+</header>
+<main class="shell case-content" id="case-study">
+<article class="case-body"><section class="reveal"><h2>The problem</h2><p>Public procurement opportunities contain extensive structured and narrative information. Manually transferring solicitation details from CanadaBuys into a CRM creates repetitive data entry, increases the chance of omissions, and makes it harder to maintain a consistent opportunity record for follow-up.</p></section><section class="reveal"><h2>How it works</h2><div class="workflow-steps"><div class="workflow-step"><span class="step-number">Step 01</span><h3>Capture the tender page</h3><p>The browser extension reads the currently open CanadaBuys notice and gathers the available solicitation details without requiring the user to click through each tender tab.</p></div><div class="workflow-step"><span class="step-number">Step 02</span><h3>Normalize the opportunity data</h3><p>The extraction routine organizes available fields such as solicitation number, title, status, key dates, organization, contact information, description, duration, regions, procurement method, evaluation criteria, UNSPSC, trade agreements, and document information.</p></div><div class="workflow-step"><span class="step-number">Step 03</span><h3>Create a CRM-ready record</h3><p>The structured record is prepared for HubSpot as a procurement opportunity, using the configured Procurement Opportunities pipeline and New Opportunity stage when those defaults are selected.</p></div><div class="workflow-step"><span class="step-number">Step 04</span><h3>Review and continue follow-up</h3><p>The record gives the team a consistent starting point for reviewing the opportunity and managing subsequent qualification and follow-up inside the CRM.</p></div></div></section><div class="media reveal" data-project-video="canadaBuysPublisher"><div class="media-placeholder"><div class="play">▶</div><b>Project demo video</b><span>Watch the walkthrough of the CanadaBuys-to-HubSpot procurement workflow.</span></div></div><section class="reveal"><h2>Design approach</h2><ul><li>Kept the source page as the intake point so the user can capture the tender while viewing its official notice.</li><li>Separated page extraction from CRM record creation so the captured data can be structured before it is sent downstream.</li><li>Used a normalized field model to make key dates, solicitation identifiers, organization details, and procurement context easier to review.</li><li>Designed the workflow around a repeatable opportunity record rather than relying on copied text scattered across browser tabs.</li></ul></section><section class="reveal"><h2>Outcome</h2><p>A repeatable CanadaBuys-to-CRM workflow that reduces manual re-keying and creates a more consistent starting record for procurement opportunity tracking. The intended CRM destination is HubSpot; the record should still be reviewed for completeness and accuracy before downstream decisions.</p></section><section class="reveal"><h2>What this demonstrates</h2><p>Browser-based data extraction, structured data normalization, CRM workflow design, procurement opportunity intake, integration planning, and exception-aware automation.</p></section></article>
+<aside class="case-aside reveal">
+<dl>
+
+
+
+
+
+
+
+
+
+
+
+
+<dt>Project</dt><dd>06 · CanadaBuys Procurement Publisher</dd><dt>Role</dt><dd>Workflow / Automation Designer</dd><dt>Status</dt><dd>Working prototype / iterative build</dd><dt>Tools / Context</dt><dd>Chrome Extension · CanadaBuys · HubSpot CRM · JavaScript</dd><dt>Cover image</dt><dd>project-canada-buys-publisher.jpg in the repository root.</dd><dt>Demo video</dt><dd>Configured in site-config.js using the supplied YouTube URL.</dd></dl>
+</aside>
+</main>
+<footer class="footer">
+<div class="shell">
+<div class="footer-grid">
+<div>
+<h2>
+        Let’s build better systems.
+       </h2>
+<p>
+        I’m interested in operations, workflow improvement, automation, client experience, and the practical systems that make complex work easier to run.
+       </p>
+</div>
+<div class="footer-links">
+<a data-link="email" href="mailto:vannessa.nyangor@gmail.com">
+        Email ↗
+       </a>
+<a aria-disabled="true" data-link="linkedin" href="#">
+        LinkedIn ↗
+       </a>
+<a data-link="github" href="https://github.com/Vannessalytics">
+        GitHub ↗
+       </a>
+</div>
+</div>
+<div class="footer-bottom">
+<span>
+       Burlington, Ontario, Canada
+      </span>
+<span>
+       ©
+       <span data-year="">
+</span>
+       Vannessa Nyang’or
+      </span>
+</div>
+</div>
+</footer>
+</div>
+<script src="site-config.js">
+</script>
+<script src="site.js">
+</script>
+</body>
+</html>

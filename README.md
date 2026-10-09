@@ -27,5 +27,6 @@ The site includes individual case-study pages for:
 3. Ontario Service Scheduling System
 4. Tank Status Communication Web App
 5. Invoice Automation
+6. CanadaBuys Procurement Publisher
 
 Each case study includes the problem, a short step-by-step workflow, design approach, outcome, capabilities demonstrated, project imagery, and an embedded demo-video area.

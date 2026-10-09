@@ -28,7 +28,7 @@ Recommended dimensions for EVERY project image:
     1600 x 900 px (16:9 PNG)
 
 Keep the main subject near the centre because the website uses cover cropping.
-The package includes the SAME temporary placeholder image under all five filenames.
+The package includes the SAME temporary placeholder image under the original project filenames.
 That means the site is complete now, but each image can be replaced independently later.
 
 Exact filenames:
@@ -37,6 +37,7 @@ Exact filenames:
     project-service-scheduling.png
     project-tank-status.png
     project-invoice-automation.png
+    project-canada-buys-publisher.jpg (1920 x 1080 JPEG is accepted for this new project)
 
 To update a project image:
     Create/export a 1600 x 900 PNG.
@@ -56,7 +57,7 @@ Replace only the URL between the quotation marks.
 Normal YouTube watch links, youtu.be links, Shorts links, live links, and embed links are accepted.
 The site converts the URL into the embedded player automatically.
 
-A real temporary YouTube video is included on every project page so the layout can be tested now.
+The CanadaBuys Procurement Publisher uses the supplied YouTube URL. Existing project entries retain their current configured URLs.
 
 4) SOCIAL LINKS — EDIT ONE FILE ONLY
 -------------------------------------

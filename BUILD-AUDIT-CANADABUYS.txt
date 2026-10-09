@@ -1,0 +1,46 @@
+VANNESSA PORTFOLIO — CANADABUYS PROCUREMENT PUBLISHER ADDITION
+===============================================================
+
+Scope
+-----
+Added one new project card to the home project rail and Projects catalog, one
+matching case-study page, one central project configuration entry, and the
+provided JPG cover image. Existing project cards, pages, styles.css, and site.js
+were retained.
+
+New files
+---------
+project-canada-buys-publisher.html
+project-canada-buys-publisher.jpg
+
+Updated files
+-------------
+index.html
+projects.html
+site-config.js
+MEDIA-GUIDE.txt
+README.md
+
+Project integration
+-------------------
+Config key: canadaBuysPublisher
+Cover image: project-canada-buys-publisher.jpg (1920 x 1080)
+Video: https://youtu.be/OQvz7kUO9zg
+Case-study link: project-canada-buys-publisher.html
+
+Checks performed
+----------------
+- site-config.js JavaScript syntax: PASS
+- site.js JavaScript syntax: PASS (unchanged)
+- Project key exists in config and matching data attributes: checked
+- Case-study page references the correct video/config key: checked
+- Internal case-study href points to the new page: checked
+- All HTML pages parsed by Python HTML parser: checked
+- Existing styles.css and site.js were not modified.
+
+Limitations
+-----------
+This is a static-file audit, not an authenticated browser test of GitHub Pages,
+YouTube playback, or a live HubSpot account. The copy describes the workflow
+based on the project context available; it does not claim production-scale
+metrics or a verified live CRM integration.

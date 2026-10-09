@@ -12,13 +12,12 @@
   - Replace the matching PNG in the repository root.
   - Recommended size for every project image: 1600 x 900 px (16:9 PNG).
   - Keep important content near the center because cards and hero areas use cover cropping.
-  - The package includes the same temporary placeholder image under all five filenames.
-    Replace each file later without changing any code.
+  - Replace each project image with its final cover artwork when available.
 
   VIDEOS
   - Replace only the videoUrl value for the project below.
   - Normal YouTube URLs work: youtube.com/watch?v=..., youtu.be/..., /shorts/..., or /embed/...
-  - A real temporary YouTube video is loaded on every case-study page for testing.
+  - Each case-study page reads its video from the matching project videoUrl below.
 
   SOCIAL LINKS
   - Add your LinkedIn URL below when ready.
@@ -58,6 +57,11 @@ window.PORTFOLIO_CONFIG = {
     invoiceAutomation: {
       coverImage: "project-invoice-automation.png",
       videoUrl: "https://www.youtube.com/watch?v=jNQXAC9IVRw"
+    },
+
+    canadaBuysPublisher: {
+      coverImage: "project-canada-buys-publisher.jpg",
+      videoUrl: "https://youtu.be/OQvz7kUO9zg"
     }
   }
 };
